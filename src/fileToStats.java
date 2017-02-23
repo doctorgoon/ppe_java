@@ -94,26 +94,33 @@ public class fileToStats {
         String file = new String(Files.readAllBytes(Paths.get("20161125-120251-ALL.txt")));
 
         String roomName; String pcName; String pcIP; int envoyes; int recus; int temps_moyen; List<String> rooms;
-        List<String> pcString; String room; int startFile;
+        List<String> pcString; String room; int roomPos;
 
         int count = file.length() - file.replace("SALLE", "").length();
 
         for (int i = 0; i < count; i = i + 1) {
-            room = findRoom(file);
-            roomName = findRoomName(room);
-            pcString = findPCString(room);
-            String[] pcArr = pcString.stream().toArray(String[]::new);
-            for (int j = 0; j < pcArr.length; j = j + 1)
-            {
-                pcName = findPCName(pcArr[i]);
-                pcIP = findPcIp(pcArr[i]);
-                envoyes = Integer.parseInt(findSent(pcArr[i]));
-                recus = Integer.parseInt(findReceived(pcArr[i]));
-                temps_moyen = Integer.parseInt(findAverageTime(pcArr[i]));
+            log(file);
+            roomPos = file.indexOf("SALLE");
+            if ( roomPos != -1 ) {
+                room = findRoom(file);
+                roomName = findRoomName(room);
+                pcString = findPCString(room);
+                String[] pcArr = pcString.stream().toArray(String[]::new);
+                for (int j = 0; j < pcArr.length; j = j + 1)
+                {
+                    pcName = findPCName(pcArr[i]);
+                    pcIP = findPcIp(pcArr[i]);
+                    envoyes = Integer.parseInt(findSent(pcArr[i]));
+                    recus = Integer.parseInt(findReceived(pcArr[i]));
+                    temps_moyen = Integer.parseInt(findAverageTime(pcArr[i]));
 
-                process(roomName, pcName, pcIP, envoyes, recus, temps_moyen);
+                    process(roomName, pcName, pcIP, envoyes, recus, temps_moyen);
+                }
+                file = file.replace(room,"");
             }
-            file = file.replace(room,"");
+            else {
+                i = count;
+            }
         }
 
 
