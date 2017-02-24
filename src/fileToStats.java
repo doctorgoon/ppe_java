@@ -100,6 +100,17 @@ public class fileToStats {
         String roomName; String pcName; String pcIP; int envoyes; int recus; int temps_moyen; List<String> rooms;
         List<String> pcString; String room; int roomPos; int nextPos;
 
+        List<String> testDates = getTestDate(file);
+        List<String> testHours = getTestHours(file);
+        int x = 1;
+        for (String temp : testDates) {
+            log("Test N° " + x + " " + temp);
+            for (String tempo : testHours) {
+                log(" à " + tempo);
+            }
+            x++;
+        }
+
         int count = 0;
         Pattern p = Pattern.compile("SALLE");
         Matcher m = p.matcher( file );
@@ -136,7 +147,7 @@ public class fileToStats {
         }
 
 
-        if (resultats != null && resultats.getSalles().size() > 0) {
+        /*if (resultats != null && resultats.getSalles().size() > 0) {
             for (int i = 0; i < resultats.getSalles().size(); i++) {
 
                 log("------------- Dans la salle " + resultats.getSalle(i).getName() + " ------------- ");
@@ -149,9 +160,55 @@ public class fileToStats {
                     );
                 }
             }
-        }
+        }*/
     }
 
+    private static List<String> getTestHours(String file) {
+        List<String> testHour = new ArrayList<>();
+
+        int startPos; int endPos;
+
+        int countTest = 0;
+        Pattern pat = Pattern.compile("TEST");
+        Matcher mat = pat.matcher( file );
+        while (mat.find()) {
+            countTest++;
+        }
+
+        for (int x = 0; x < countTest; x++) {
+            startPos = file.indexOf(" à ") + 3;
+            endPos = file.indexOf("SALLE", startPos);
+            String hour = file.substring(startPos, endPos);
+            testHour.add(hour);
+            file =  file.substring(endPos + 1);
+        }
+
+        return testHour;
+    }
+
+    private static List<String> getTestDate(String file) {
+
+        List<String> testDate = new ArrayList<>();
+
+        int startPos; int endPos;
+
+        int countTest = 0;
+        Pattern pat = Pattern.compile("TEST");
+        Matcher mat = pat.matcher( file );
+        while (mat.find()) {
+            countTest++;
+        }
+
+        for (int x = 0; x < countTest; x++) {
+            startPos = file.indexOf("Le ") + 3;
+            endPos = file.indexOf(" à ");
+            String date = file.substring(startPos, endPos);
+            testDate.add(date);
+            file =  file.substring(endPos + 1);
+        }
+
+        return testDate;
+    }
 
     private static String findAverageTime(String pcString) {
 

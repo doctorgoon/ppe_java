@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f012ea78-a98e-4ebc-bbd7-deae89a509b7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/20161125-120251-ALL.txt" afterPath="$PROJECT_DIR$/20161125-120251-ALL.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fileToStats.java" afterPath="$PROJECT_DIR$/src/fileToStats.java" />
     </list>
     <ignored path="logsAnalyzer.iws" />
@@ -31,10 +30,12 @@
       <file leaf-file-name="fileToStats.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/fileToStats.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="784">
-              <caret line="104" column="16" lean-forward="false" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="16" />
+            <state relative-caret-position="529">
+              <caret line="110" column="16" lean-forward="true" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#getTestHours#0;class#fileToStats#0" expanded="false" />
+                <element signature="method#getTestDate#0;class#fileToStats#0" expanded="false" />
                 <element signature="method#findAverageTime#0;class#fileToStats#0" expanded="false" />
                 <element signature="method#findReceived#0;class#fileToStats#0" expanded="false" />
                 <element signature="method#findSent#0;class#fileToStats#0" expanded="false" />
@@ -44,7 +45,7 @@
                 <element signature="method#findRoomName#0;class#fileToStats#0" expanded="false" />
                 <element signature="method#findRoom#0;class#fileToStats#0" expanded="false" />
                 <element signature="class#Resultats#0;class#fileToStats#0" expanded="false" />
-                <element signature="e#8221#8229#0" expanded="true" />
+                <element signature="e#9865#9873#0" expanded="true" />
                 <element signature="class#Salles#0;class#fileToStats#0" expanded="false" />
                 <element signature="class#Postes#0;class#fileToStats#0" expanded="false" />
               </folding>
@@ -629,12 +630,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1487437796202</updated>
-      <workItem from="1487928796367" duration="7149000" />
+      <workItem from="1487928796367" duration="13237000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7149000" />
+    <option name="totallyTimeSpent" value="13237000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -650,10 +651,10 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25792813" sideWeight="0.503231" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.18743229" sideWeight="0.49676898" order="6" side_tool="false" content_ui="tabs" x="1921" y="117" width="958" height="1008" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.18743229" sideWeight="0.49676898" order="6" side_tool="false" content_ui="tabs" x="1921" y="117" width="958" height="1008" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3217768" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.114605546" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
@@ -691,7 +692,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/fileToStats.java</url>
-          <line>174</line>
+          <line>231</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
@@ -711,6 +712,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#getTestHours#0;class#fileToStats#0" expanded="false" />
+            <element signature="method#getTestDate#0;class#fileToStats#0" expanded="false" />
             <element signature="method#findAverageTime#0;class#fileToStats#0" expanded="false" />
             <element signature="method#findReceived#0;class#fileToStats#0" expanded="false" />
             <element signature="method#findSent#0;class#fileToStats#0" expanded="false" />
@@ -720,7 +723,7 @@
             <element signature="method#findRoomName#0;class#fileToStats#0" expanded="false" />
             <element signature="method#findRoom#0;class#fileToStats#0" expanded="false" />
             <element signature="class#Resultats#0;class#fileToStats#0" expanded="false" />
-            <element signature="e#8221#8229#0" expanded="true" />
+            <element signature="e#9865#9873#0" expanded="true" />
             <element signature="class#Salles#0;class#fileToStats#0" expanded="false" />
             <element signature="class#Postes#0;class#fileToStats#0" expanded="false" />
           </folding>
@@ -733,6 +736,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#getTestHours#0;class#fileToStats#0" expanded="false" />
+            <element signature="method#getTestDate#0;class#fileToStats#0" expanded="false" />
             <element signature="method#findAverageTime#0;class#fileToStats#0" expanded="false" />
             <element signature="method#findReceived#0;class#fileToStats#0" expanded="false" />
             <element signature="method#findSent#0;class#fileToStats#0" expanded="false" />
@@ -742,7 +747,7 @@
             <element signature="method#findRoomName#0;class#fileToStats#0" expanded="false" />
             <element signature="method#findRoom#0;class#fileToStats#0" expanded="false" />
             <element signature="class#Resultats#0;class#fileToStats#0" expanded="false" />
-            <element signature="e#8221#8229#0" expanded="true" />
+            <element signature="e#9865#9873#0" expanded="true" />
             <element signature="class#Salles#0;class#fileToStats#0" expanded="false" />
             <element signature="class#Postes#0;class#fileToStats#0" expanded="false" />
           </folding>
@@ -755,6 +760,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#getTestHours#0;class#fileToStats#0" expanded="false" />
+            <element signature="method#getTestDate#0;class#fileToStats#0" expanded="false" />
             <element signature="method#findAverageTime#0;class#fileToStats#0" expanded="false" />
             <element signature="method#findReceived#0;class#fileToStats#0" expanded="false" />
             <element signature="method#findSent#0;class#fileToStats#0" expanded="false" />
@@ -764,7 +771,7 @@
             <element signature="method#findRoomName#0;class#fileToStats#0" expanded="false" />
             <element signature="method#findRoom#0;class#fileToStats#0" expanded="false" />
             <element signature="class#Resultats#0;class#fileToStats#0" expanded="false" />
-            <element signature="e#8221#8229#0" expanded="true" />
+            <element signature="e#9865#9873#0" expanded="true" />
             <element signature="class#Salles#0;class#fileToStats#0" expanded="false" />
             <element signature="class#Postes#0;class#fileToStats#0" expanded="false" />
           </folding>
@@ -777,6 +784,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#getTestHours#0;class#fileToStats#0" expanded="false" />
+            <element signature="method#getTestDate#0;class#fileToStats#0" expanded="false" />
             <element signature="method#findAverageTime#0;class#fileToStats#0" expanded="false" />
             <element signature="method#findReceived#0;class#fileToStats#0" expanded="false" />
             <element signature="method#findSent#0;class#fileToStats#0" expanded="false" />
@@ -786,7 +795,7 @@
             <element signature="method#findRoomName#0;class#fileToStats#0" expanded="false" />
             <element signature="method#findRoom#0;class#fileToStats#0" expanded="false" />
             <element signature="class#Resultats#0;class#fileToStats#0" expanded="false" />
-            <element signature="e#8221#8229#0" expanded="true" />
+            <element signature="e#9865#9873#0" expanded="true" />
             <element signature="class#Salles#0;class#fileToStats#0" expanded="false" />
             <element signature="class#Postes#0;class#fileToStats#0" expanded="false" />
           </folding>
@@ -797,10 +806,12 @@
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/util/function/IntFunction.java" />
     <entry file="file://$PROJECT_DIR$/src/fileToStats.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="104" column="16" lean-forward="false" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="16" />
+        <state relative-caret-position="529">
+          <caret line="110" column="16" lean-forward="true" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#getTestHours#0;class#fileToStats#0" expanded="false" />
+            <element signature="method#getTestDate#0;class#fileToStats#0" expanded="false" />
             <element signature="method#findAverageTime#0;class#fileToStats#0" expanded="false" />
             <element signature="method#findReceived#0;class#fileToStats#0" expanded="false" />
             <element signature="method#findSent#0;class#fileToStats#0" expanded="false" />
@@ -810,7 +821,7 @@
             <element signature="method#findRoomName#0;class#fileToStats#0" expanded="false" />
             <element signature="method#findRoom#0;class#fileToStats#0" expanded="false" />
             <element signature="class#Resultats#0;class#fileToStats#0" expanded="false" />
-            <element signature="e#8221#8229#0" expanded="true" />
+            <element signature="e#9865#9873#0" expanded="true" />
             <element signature="class#Salles#0;class#fileToStats#0" expanded="false" />
             <element signature="class#Postes#0;class#fileToStats#0" expanded="false" />
           </folding>
