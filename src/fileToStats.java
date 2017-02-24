@@ -1,6 +1,7 @@
 import com.sun.org.apache.xpath.internal.operations.Bool;
 import com.sun.org.omg.CORBA.StructMemberHelper;
 import com.sun.xml.internal.ws.util.StringUtils;
+//import org.apache.commons.lang.StringUtils;
 
 import java.io.*;
 import java.lang.reflect.Array;
@@ -24,6 +25,8 @@ import java.lang.Object;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  *
@@ -91,42 +94,47 @@ public class fileToStats {
      */
     public static void main(String[] args) throws IOException {
 
+        resultats = new Resultats();
+
         String file = new String(Files.readAllBytes(Paths.get("20161125-120251-ALL.txt")));
-
         String roomName; String pcName; String pcIP; int envoyes; int recus; int temps_moyen; List<String> rooms;
-        List<String> pcString; String room; int roomPos;
+        List<String> pcString; String room; int roomPos; int nextPos;
 
-        int count = file.length() - file.replace("SALLE", "").length();
+        int count = 0;
+        Pattern p = Pattern.compile("SALLE");
+        Matcher m = p.matcher( file );
+        while (m.find()) {
+            count++;
+        }
 
         for (int i = 0; i < count; i = i + 1) {
-            log(file);
             roomPos = file.indexOf("SALLE");
             if ( roomPos != -1 ) {
                 room = findRoom(file);
                 roomName = findRoomName(room);
                 pcString = findPCString(room);
-                String[] pcArr = pcString.stream().toArray(String[]::new);
-                for (int j = 0; j < pcArr.length; j = j + 1)
-                {
-                    pcName = findPCName(pcArr[i]);
-                    pcIP = findPcIp(pcArr[i]);
-                    envoyes = Integer.parseInt(findSent(pcArr[i]));
-                    recus = Integer.parseInt(findReceived(pcArr[i]));
-                    temps_moyen = Integer.parseInt(findAverageTime(pcArr[i]));
 
+                for (String temp : pcString) {
+                    pcName = findPCName(temp);
+                    pcIP = findPcIp(temp);
+                    envoyes = Integer.parseInt(findSent(temp));
+                    recus = Integer.parseInt(findReceived(temp));
+                    temps_moyen = Integer.parseInt(findAverageTime(temp));
                     process(roomName, pcName, pcIP, envoyes, recus, temps_moyen);
                 }
-                file = file.replace(room,"");
+                nextPos = file.indexOf("SALLE", roomPos + 1);
+                if (nextPos == -1 ) {
+                    i = count;
+                }
+                else {
+                    file = file.substring(nextPos);
+                }
             }
             else {
                 i = count;
             }
         }
 
-
-        resultats = new Resultats();
-
-        //process("Salle1", "hello", "Poste2", 0, 10, 5);
 
         if (resultats != null && resultats.getSalles().size() > 0) {
             for (int i = 0; i < resultats.getSalles().size(); i++) {
@@ -143,6 +151,7 @@ public class fileToStats {
             }
         }
     }
+
 
     private static String findAverageTime(String pcString) {
 
@@ -211,7 +220,12 @@ public class fileToStats {
 
         List<String> pcStrings = new ArrayList<>();
 
-        int count = room.length() - room.replace("[", "").length();
+        int count = 0;
+        for( int i=0; i<room.length(); i++ ) {
+            if( room.charAt(i) == '[' ) {
+                count++;
+            }
+        }
 
         String pcString; int startPos; int endPos;
 
@@ -244,12 +258,12 @@ public class fileToStats {
 
     private static String findRoom(String file) {
 
-        int startPos;int endPos; String room;
+        int startPos; int endPos; String room;
 
         startPos = file.indexOf("SALLE");
-        endPos = file.indexOf("SALLE", startPos);
-        if (endPos != -1) {
-            endPos = file.indexOf("==", startPos);
+        endPos = file.indexOf("SALLE", startPos + 1);
+        if (endPos == -1) {
+            endPos = file.indexOf("==");
         }
 
         room = file.substring(startPos, endPos);
