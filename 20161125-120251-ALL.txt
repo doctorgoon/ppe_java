@@ -22,6 +22,25 @@ Reponse de 10.2.119.17: Impossible de joindre l'hote de destination.
 Statistiques Ping pour 10.2.119.17:
 Paquets: envoyes = 1, recus = 0, perdus = 1 (perte 100%),
 
+Envoi d'une requete 'ping' sur DIR-02 [10.2.119.25] avec 32 octets de donnees:
+Reponse de 10.2.119.17: Impossible de joindre l'hote de destination.
+Statistiques Ping pour 10.2.119.17:
+Paquets: envoyes = 1, recus = 1, perdus = 0 (perte 100%),
+
+Envoi d'une requete 'ping' sur DIR-03 [10.2.119.18] avec 32 octets de donnees:
+Reponse de 10.2.119.17: Impossible de joindre l'hote de destination.
+Statistiques Ping pour 10.2.119.17:
+Paquets: envoyes = 1, recus = 1, perdus = 0 (perte 100%),
+
+
+SALLE Bât03-Eta01-B11 :
+
+Envoi d'une requete 'ping' sur CAF-01 [10.2.220.17] avec 32 octets de donnees:
+Reponse de 10.2.119.17: Impossible de joindre l'hote de destination.
+Statistiques Ping pour 10.2.119.17:
+Paquets: envoyes = 1, recus = 0, perdus = 1 (perte 100%),
+
+
 SALLE Bât02-Eta00-B01 :
 
 Envoi d'une requete 'ping' sur ATL-01 [10.2.125.17] avec 32 octets de donnees:
@@ -35,8 +54,7 @@ Statistiques Ping pour 10.2.125.99:
 Paquets: envoyes = 1, recus = 0, perdus = 1 (perte 100%),
 
 ============================================================
-
-TEST N°2 Le 25/11/2016 à 12:02:55,02
+TEST N°2 Le 25/11/2016 à 12:02:51,71
 
 SALLE Bât01-Eta00-B01 :
 
@@ -48,9 +66,10 @@ Paquets: envoyes = 1, recus = 0, perdus = 1 (perte 100%),
 Envoi d'une requete 'ping' sur SEC-02 [10.2.117.99] avec 32 octets de donnees:
 Reponse de 10.2.117.99: octets=32 temps<1ms TTL=128
 Statistiques Ping pour 10.2.117.99:
-Paquets: envoyes = 2, recus = 2, perdus = 0 (perte 0%),
+Paquets: envoyes = 1, recus = 1, perdus = 0 (perte 0%),
 Duree approximative des boucles en millisecondes :
 Minimum = 0ms, Maximum = 0ms, Moyenne = 0ms
+
 
 SALLE Bât01-Eta01-B11 :
 
@@ -58,6 +77,81 @@ Envoi d'une requete 'ping' sur DIR-01 [10.2.119.17] avec 32 octets de donnees:
 Reponse de 10.2.119.17: Impossible de joindre l'hote de destination.
 Statistiques Ping pour 10.2.119.17:
 Paquets: envoyes = 1, recus = 0, perdus = 1 (perte 100%),
+
+Envoi d'une requete 'ping' sur DIR-02 [10.2.119.25] avec 32 octets de donnees:
+Reponse de 10.2.119.17: Impossible de joindre l'hote de destination.
+Statistiques Ping pour 10.2.119.17:
+Paquets: envoyes = 1, recus = 1, perdus = 0 (perte 100%),
+
+Envoi d'une requete 'ping' sur DIR-03 [10.2.119.18] avec 32 octets de donnees:
+Reponse de 10.2.119.17: Impossible de joindre l'hote de destination.
+Statistiques Ping pour 10.2.119.17:
+Paquets: envoyes = 1, recus = 1, perdus = 0 (perte 100%),
+
+
+SALLE Bât03-Eta01-B11 :
+
+Envoi d'une requete 'ping' sur CAF-01 [10.2.220.17] avec 32 octets de donnees:
+Reponse de 10.2.119.17: Impossible de joindre l'hote de destination.
+Statistiques Ping pour 10.2.119.17:
+Paquets: envoyes = 1, recus = 0, perdus = 1 (perte 100%),
+
+
+SALLE Bât02-Eta00-B01 :
+
+Envoi d'une requete 'ping' sur ATL-01 [10.2.125.17] avec 32 octets de donnees:
+Reponse de 10.2.125.17: Impossible de joindre l'hote de destination.
+Statistiques Ping pour 10.2.125.17:
+Paquets: envoyes = 1, recus = 0, perdus = 1 (perte 100%),
+
+Envoi d'une requete 'ping' sur ATL-02 [10.2.125.99] avec 32 octets de donnees:
+Reponse de 10.2.125.99: Impossible de joindre l'hote de destination.
+Statistiques Ping pour 10.2.125.99:
+Paquets: envoyes = 1, recus = 0, perdus = 1 (perte 100%),
+
+============================================================
+TEST N°3 Le 25/11/2016 à 12:02:51,71
+
+SALLE Bât01-Eta00-B01 :
+
+Envoi d'une requete 'ping' sur SEC-01 [10.2.117.1] avec 32 octets de donnees:
+Reponse de 10.2.117.1: Impossible de joindre l'hote de destination.
+Statistiques Ping pour 10.2.117.1:
+Paquets: envoyes = 1, recus = 0, perdus = 1 (perte 100%),
+
+Envoi d'une requete 'ping' sur SEC-02 [10.2.117.99] avec 32 octets de donnees:
+Reponse de 10.2.117.99: octets=32 temps<1ms TTL=128
+Statistiques Ping pour 10.2.117.99:
+Paquets: envoyes = 1, recus = 1, perdus = 0 (perte 0%),
+Duree approximative des boucles en millisecondes :
+Minimum = 0ms, Maximum = 0ms, Moyenne = 0ms
+
+
+SALLE Bât01-Eta01-B11 :
+
+Envoi d'une requete 'ping' sur DIR-01 [10.2.119.17] avec 32 octets de donnees:
+Reponse de 10.2.119.17: Impossible de joindre l'hote de destination.
+Statistiques Ping pour 10.2.119.17:
+Paquets: envoyes = 1, recus = 0, perdus = 1 (perte 100%),
+
+Envoi d'une requete 'ping' sur DIR-02 [10.2.119.25] avec 32 octets de donnees:
+Reponse de 10.2.119.17: Impossible de joindre l'hote de destination.
+Statistiques Ping pour 10.2.119.17:
+Paquets: envoyes = 1, recus = 1, perdus = 0 (perte 100%),
+
+Envoi d'une requete 'ping' sur DIR-03 [10.2.119.18] avec 32 octets de donnees:
+Reponse de 10.2.119.17: Impossible de joindre l'hote de destination.
+Statistiques Ping pour 10.2.119.17:
+Paquets: envoyes = 1, recus = 1, perdus = 0 (perte 100%),
+
+
+SALLE Bât03-Eta01-B11 :
+
+Envoi d'une requete 'ping' sur CAF-01 [10.2.220.17] avec 32 octets de donnees:
+Reponse de 10.2.119.17: Impossible de joindre l'hote de destination.
+Statistiques Ping pour 10.2.119.17:
+Paquets: envoyes = 1, recus = 0, perdus = 1 (perte 100%),
+
 
 SALLE Bât02-Eta00-B01 :
 
