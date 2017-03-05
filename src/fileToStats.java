@@ -28,14 +28,11 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- *
  * @author Jeremy AVID
  */
-public class  fileToStats extends Component {
+public class fileToStats extends Component {
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) throws IOException {
 
         AppWindow app = new AppWindow();
